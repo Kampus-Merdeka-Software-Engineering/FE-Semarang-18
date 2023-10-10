@@ -2,10 +2,10 @@ document.addEventListener("DOMContentLoaded", () => {
     const output = document.getElementById("output");
   
     const SearchButton = document.getElementById("search");
-    // const HitungHargaButton = document.getElementById("hitungharga");
+    const HitungHargaButton = document.getElementById("hitungharga");
 
 
-    const baseURL = 'https://localhost:3000/data/'
+    const baseURL = 'https://demo-be-railway-production.up.railway.app/users'
 
     SearchButton.addEventListener("click", async () => {
       const Resi =  document.getElementById("getResi").value;
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({nomor_resi}),
+        body: JSON.stringify({name, email}),
       });
 
       const result = await response.json();
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     HitungHargaButton.addEventListener("click", async () => {
-      const name =  document.getElementById("findresi").value;
+      const name =  document.getElementById("findName").value;
 
       const response = await fetch(baseURL + '/' + name, {
         method: "GET",
