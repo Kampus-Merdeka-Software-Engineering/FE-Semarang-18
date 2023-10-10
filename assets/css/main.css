@@ -195,7 +195,7 @@ p {
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
-  color: #afafaf;
+  color: #0a0000;
 }
 
 img {
@@ -2459,7 +2459,7 @@ responsive
   outline: none;
   background: #e2e2e2;
   font-size: 16px;
-  border-radius: 0;
+  border-radius: 25px;
   transition: all 0.5s;
   width: 50%;
 }
@@ -2474,7 +2474,7 @@ responsive
   cursor: pointer;
   width: 15em;
   margin: 1em auto 0.5em;
-  border-radius: 0;
+  border-radius: 25px;
 }
 
 .tracking_check button:hover {
@@ -2560,7 +2560,7 @@ responsive
   outline: none;
   background: #e2e2e2;
   font-size: 16px;
-  border-radius: 0;
+  border-radius: 25px;
   transition: all 0.5s;
   width: 50%;
 }
@@ -2575,7 +2575,7 @@ responsive
   cursor: pointer;
   width: 15em;
   margin: 1em auto 0.5em;
-  border-radius: 0;
+  border-radius: 25px;
 }
 
 .simulasiHarga button:hover {
